@@ -1,0 +1,19 @@
+package behavioral.template;
+
+public class TemplateDemo {
+
+    public static void main(String[] args) {
+
+        DataProcessor csv =
+                new CsvDataProcessor();
+
+        csv.process();
+
+        System.out.println();
+
+        DataProcessor json =
+                new JsonDataProcessor();
+
+        json.process();
+    }
+}
